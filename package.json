@@ -1,7 +1,7 @@
 {
   "name": "Adam-Heldring-Portfolio",
   "private": true,
-  "description": "Portfolio - Adam Heldring resume and code samples.",
+  "description": "Portfolio - Adam Heldring resume with code samples.",
   "version": "0.1.0",
   "author": "Adam Heldring",
   "dependencies": {

@@ -1,0 +1,199 @@
+{
+	"projects": [
+		{
+			"id": 1,
+			"title": "Watch Your Tone",
+			"subtitle": "Synth & drum sequenser built in React and Node using the Web Audio API. ",
+			"image": "./assets/watchyourtone.jpg",
+			"color": "#ca7acf",
+			"link": "https://watchyourtone.herokuapp.com/",
+			"repo": "https://github.com/adamheldring/WatchYourTone",
+			"description": "💻 A web synth with drum machine (…or really a 16-bar step sequenser) built in JavaScript. React in the front-end on top of Node and Express in the back-end talking to a MongoDB database. Exploring the Web Audio API and Tone.js. Matched with a retro design.<br/><br/> 🥁 Press play and start clicking the squares for synth notes and circles for drums. This instrument is meant to be played with and you don't have to be a musician. Make a song and save it to the database. Or load someone elses song for inspiration!",
+			"tech": {
+				"code": [
+					"JavaScript ES6",
+					"React",
+					"Node",
+					"Express",
+					"Mongo DB",
+					"Web Audio API",
+					"Tone.js",
+					"HTML5",
+					"CSS3",
+					"JSX"
+				],
+				"toolbox": [
+					"VSCode",
+					"iTerm2",
+					"Postman",
+					"Compass",
+					"GitHub",
+					"Adobe Photoshop",
+					"Trello"
+				],
+				"more": [
+					"Concept development",
+					"Design"
+				]
+			}
+		},
+		{
+			"id": 2,
+			"title": "adamheldring.com",
+			"subtitle": "Band marketing page built with React, Gatsby, GraphQL and Spring animations.",
+			"image": "./assets/ah2019.jpg",
+			"color": "#ffa300",
+			"link": "https://www.adamheldring.com",
+			"repo": "https://github.com/adamheldring/AH2019",
+			"description": "💻 Responsive and blazing fast artist page built with React and Gatsby for static site generation. Using a GraphQL API for data loading and React Spring for physics based animations. Integrated Spotify and YouTube players.<br/><br/> 🎸 Yes, I also make music and release records. This is a real website for my very real music endeavors. But is the music any good? Well, there's a time to be modest and a time to be honest. So... YES, this music is awesome!",
+			"tech": {
+				"code": [
+					"JavaScript ES6",
+					"React",
+					"Gatsby",
+					"GraphQL",
+					"React Spring Animations",
+					"HTML5",
+					"CSS3",
+					"JSX",
+					"Spotify integration",
+					"YouTube integration"
+				],
+				"toolbox": [
+					"VSCode",
+					"iTerm2",
+					"GitHub",
+					"Adobe Photoshop",
+					"Trello"
+				],
+				"more": [
+					"Concept development",
+					"Design",
+					"Music Production",
+					"Video Production"
+				]
+			}
+		},
+		{
+			"id": 3,
+			"title": "Board Game Grid",
+			"subtitle": "Game board with drag'n'drop for physical real world board games built with React.",
+			"image": "./assets/rpggrid.jpg",
+			"color": "#5fc2fb",
+			"link": "https://adamheldring.github.io/RpgGrid/",
+			"repo": "https://github.com/adamheldring/RpgGrid",
+			"description": "💻 Drag'n'drop based board game grid to be used as a digital tool for real world board games. Built with React, CSS Grid and ReactDnD. Intended for use with medium to large size touch screens where physical board game figures and markers can be moved around.<br/><br/>🎲 I've been playing Dungeons and Dragons with my childhood friends (#nobrag #noshame) for more than 20 years but with a 15 year gap. And when we unpacked the box after 15 years – the plastic battle figures still looked awesome but the fold-out paper board that came with the game suddenly seemed useless. We did however have a large size touch screen that we could lay flat on the table, so my mind wandered straight to code. And that's the story behind this odd digital retro board game grid that still relies on real world figures and markers.",
+			"tech": {
+				"code": [
+					"JavaScript ES6",
+					"React",
+					"HTML5",
+					"CSS3",
+					"CSS Grid",
+					"React DnD"
+				],
+				"toolbox": [
+					"VSCode",
+					"iTerm2",
+					"GitHub",
+					"Adobe Photoshop",
+					"Trello"
+				],
+				"more": [
+					"Concept development",
+					"Design"
+				]
+			}
+		},
+		{
+			"id": 4,
+			"title": "Who's Turn",
+			"subtitle": "Who's Turn – order rotation tracker built in pure vanilla JavaScript, HTML and CSS.",
+			"image": "./assets/whosturn.jpg",
+			"color": "#11aa11",
+			"link": "http://vemstips.adamheldring.com/",
+			"repo": "https://github.com/adamheldring/vemstips",
+			"description": "💻 Straight-forward and useful single-purpose order rotation tracker app that keeps track of a list of players and states who's turn it is this week. Just for flavor it also counts down the days and turns red on game day. Built in pure vanilla JavaScript.<br/><br/> 💚 This might be a simple website but I hold it very dear and I actively use it every week. For me it's a great example of how a little code can really make your life easier. Every week – my dad, my brother and I take turns placing bets on the Saturday soccer games. Then we all follow the games, cheer and make fun of each others teams via chat. Classic family stuff I guess and a great way to keep in touch no matter what else is going on that weekend. But every week there was always a big fuzz about who’s turn it really was to place the bets. Until I finally made this little app to settle the question once and for all.",
+			"tech": {
+				"code": [
+					"JavaScript ES6",
+					"HTML5",
+					"CSS3"
+				],
+				"toolbox": [
+					"VSCode",
+					"GitHub"
+				],
+				"more": [
+					"Design"
+				]
+			}
+		},
+		{
+			"id": 5,
+			"title": "Radio Player",
+			"subtitle": "Radio player built in React and JavaScript ES6 with Sveriges Radio's open API.",
+			"image": "./assets/radioplayer.jpg",
+			"color": "#EF652B",
+			"link": "https://adamheldring.github.io/RadioPlayer/",
+			"repo": "https://github.com/adamheldring/RadioPlayer/",
+			"description": "💻 Responsive Radio Player built in React and JavaScript ES6. Bringing in streaming live radio using Sveriges Radio’s open API. A search field lets the user filter channels by subtitle and description.<br/><br/> 📻 Clicking the old radio in desktop mode gives the site a retro look, and the clickable icon up on the right is a tip of the hat to another radio themed culture phenomenon.",
+			"tech": {
+				"code": [
+					"JavaScript ES6",
+					"React",
+					"HTML5",
+					"CSS3",
+					"JSX",
+					"SR Open API"
+				],
+				"toolbox": [
+					"Atom",
+					"GitHub",
+					"Postman",
+					"Adobe Photoshop",
+					"Command Line",
+					"Trello"
+				],
+				"more": [
+					"Concept development",
+					"Agile methodology"
+				]
+			}
+		},
+		{
+			"id": 6,
+			"title": "BitCoin Tracker",
+			"subtitle": "BitCoin tracker built in React and JavaScript ES6. Using WebSocket, SASS and BEM.",
+			"image": "./assets/bitcointracker.jpg",
+			"color": "#7A8A63",
+			"link": "https://adamheldring.github.io/BitCoinTracker/",
+			"repo": "https://github.com/adamheldring/BitCoinTracker/",
+			"description": "💻 BitCoin Tracker built in React and JavaScript ES6. Visual data representation graphs with external library Recharts. Using WebSocket for real live updates of the latest BitCoin transactions. Styled with CSS pre-processor SASS and following BEM methodology. Lets user track daily trend, compare price to daily high and low and follow fluctuations between best ask and best bid.<br/><br/> 💵 The app really does listen for real world BitCoin transactions, so depending on the time of day it might take a second for the next one to drop in. Then just sit back and watch the curves develop. If it is a good day for BitCoin, the financial assistant will give you the thumbs up!",
+			"tech": {
+				"code": [
+					"JavaScript ES6",
+					"React",
+					"WebSocket",
+					"Rechart",
+					"HTML5",
+					"CSS3",
+					"JSX",
+					"SASS"
+				],
+				"toolbox": [
+					"Atom",
+					"GitHub",
+					"Adobe Photoshop",
+					"Command Line",
+					"Trello"
+				],
+				"more": [
+					"BEM Methodology",
+					"Concept development",
+					"Agile methodology"
+				]
+			}
+		}
+	]
+}
