@@ -80,7 +80,7 @@
 		"title": "Board Game Grid",
 		"subtitle": "Game board with drag'n'drop for physical real world board games built with React.",
 		"slug": "board-game-grid",
-		"image": ".../images/projects/rpggrid.jpg",
+		"image": "../images/projects/rpggrid.jpg",
 		"color": "#5fc2fb",
 		"link": "https://adamheldring.github.io/RpgGrid/",
 		"repo": "https://github.com/adamheldring/RpgGrid",

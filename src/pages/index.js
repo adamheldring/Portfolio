@@ -4,23 +4,32 @@ import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 import Img from "gatsby-image"
-import projects from "../data/projects.json"
 
 
 const IndexPage = ({ data }) => {
   const { ahlogo, portrait } = data
+  const projects = data.allProjectsJson.edges.map(edge => edge.node)
+  console.log(projects)
   return (
     <Layout>
       <SEO title="Portfolio – Resume" />
       <h1>Landing</h1>
-      {projects.map(project => <h2 key={project.id}>{project.title}</h2>)}
+      {projects.map(project => {
+        console.log("PROJECT: ", project.image)
+        return (
+          <div>
+            <h2 key={project.id}>{project.title}</h2>
+            <Img fluid={project.image.childImageSharp.fluid} alt="" />
+          </div>
+        )
+      })}
       <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
         <Image />
         <Img fluid={ahlogo.childImageSharp.fluid} />
         <Img fluid={portrait.childImageSharp.fluid} />
       </div>
       <Link to="/page-2/">Go to page 2</Link>
-    </Layout>
+    </Layout >
   )
 }
 
@@ -43,6 +52,23 @@ export const imageQuery = graphql`
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    allProjectsJson {
+      edges {
+        node {
+          id
+          title
+          subtitle
+          slug
+          image {
+            childImageSharp {
+              fluid {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
         }
       }
     }
