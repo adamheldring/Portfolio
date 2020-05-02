@@ -1,0 +1,7 @@
+.noMatchPage {
+  display: flex;
+  justify-content: space-between;
+}
+.noMatchPage img {
+  filter: grayscale(1);
+}

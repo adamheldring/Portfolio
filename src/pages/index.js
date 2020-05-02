@@ -1,7 +1,6 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
 import Img from "gatsby-image"
 
@@ -19,12 +18,11 @@ const IndexPage = ({ data }) => {
         return (
           <div>
             <h2 key={project.id}>{project.title}</h2>
-            <Img fluid={project.image.childImageSharp.fluid} alt="" />
+            <Img fluid={project.image.childImageSharp.fluid} alt={project.title} />
           </div>
         )
       })}
       <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-        <Image />
         <Img fluid={ahlogo.childImageSharp.fluid} />
         <Img fluid={portrait.childImageSharp.fluid} />
       </div>
