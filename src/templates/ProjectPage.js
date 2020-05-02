@@ -1,8 +1,8 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
-import Img from "gatsby-image"
+import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import ProjectDetail from "../components/ProjectDetail/ProjectDetail"
 
 export const query = graphql`
   query($slug: String!){
@@ -30,17 +30,10 @@ export const query = graphql`
 
 const ProjectPage = ({ data }) => {
   const project = data.projectsJson
-  console.log("FROM PROJECT DETAIL: ", project)
   return (
     <Layout>
-      <SEO title={`Portfolio – Project: ${project.title}`} />
-      <h1>{project.title}</h1>
-      <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-        <h2>{project.subtitle}</h2>
-        <p>{project.description}</p>
-      </div>
-      <Img fluid={project.image.childImageSharp.fluid} alt={project.title} />
-      <Link to="/page-2/">Go to page 2</Link>
+      <SEO title={`${project.title}`} />
+      <ProjectDetail project={project} />
     </Layout>
   )
 }

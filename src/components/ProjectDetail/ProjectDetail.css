@@ -1,0 +1,105 @@
+.projectPage-container img {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.projectPage-container h1 {
+  width: 100%;
+  margin-bottom: 0;
+}
+.projectPage-container h2 {
+  max-width: 700px;
+}
+.projectPage-container p {
+  width: 700px;
+  margin-bottom: 40px;
+}
+.ppBacklink {
+  display: inline-block;
+  padding-right: 8px;
+}
+
+.ppBacklink-content-wrapper {
+  display: flex;
+  align-items: center;
+}
+.ppBackarrow-svg {
+  width: 20px;
+  height: 20px;
+  margin-right: 6px;
+  opacity: 0.75;
+}
+.ppTech-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+.ppTechSection-container {
+  width: 35%;
+  padding-right: 5%;
+  margin-bottom: 50px;
+}
+.ppTechSection-container ul {
+  list-style-type: none;
+}
+.section-content-division {
+  width: 35%;
+  padding-right: 5%;
+}
+.ppCodeButton-container {
+  text-align: center;
+}
+@media (min-width: 1100px) {
+  .ppTechSection-container:nth-child(3n+1) {
+    width: 30%;
+    padding-right: 0%;
+  }
+}
+@media (min-width: 601px) and (max-width: 1099px) {
+  .projectPage-container h1 {
+    margin-bottom: 10px;
+  }
+  .projectPage-container p {
+    width: 100%;
+    max-width: 700px;
+  }
+  .ppTech-container {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .ppTechSection-container {
+    width: 48%;
+    padding-right: 0;
+    margin-bottom: 0;
+  }
+  .ppTechSection-container:nth-child(2n+1) {
+    width: 48%;
+    padding-left: 4%;
+  }
+  .ppTechSection-container h3 {
+    width: 100%;
+  }
+  .ppCodeButton-container {
+    margin-top: 25px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .projectPage-container h1 {
+    margin-bottom: 10px;
+  }
+  .projectPage-container p {
+    max-width: 100%;
+  }
+  .ppTechSection-container {
+    width: 100%;
+    padding-right: 0;
+    margin-bottom: 0;
+  }
+  .ppTechSection-container h3 {
+    width: 100%;
+  }
+  .ppCodeButton-container {
+    margin-top: 25px;
+  }
+}

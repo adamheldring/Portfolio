@@ -20,7 +20,14 @@ const NoMatchPage = () => {
   console.log(data)
   return (
     <div className="noMatchPage">
-      <Link to="/">&#8592; Back</Link>
+      <Link className="ppBacklink" to="/">
+        <div className="ppBacklink-content-wrapper">
+          <svg className="ppBackarrow-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+            <path d="M10 13h8V7h-8V2l-8 8 8 8v-5z" />
+          </svg>
+            Back
+          </div>
+      </Link>
       <div>
         <h1>Sorry, no such page...</h1>
         <p><i>"Return to sender, address unknown,<br />  no such number, no such zone"</i></p>

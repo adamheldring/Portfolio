@@ -1,0 +1,14 @@
+.projectOverview {
+  width: 100%;
+}
+.projectOverview img {
+  width: 100%;
+}
+.projectOverview h3 {
+  padding-top: 10px;
+  background: none;
+  min-height: 68px;
+}
+.projectOverview h3:hover {
+  text-decoration: underline;
+}

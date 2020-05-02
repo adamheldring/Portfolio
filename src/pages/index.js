@@ -1,9 +1,8 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Img from "gatsby-image"
-
+import LandingPage from "../components/LandingPage/LandingPage"
 
 const IndexPage = ({ data }) => {
   const { ahlogo, portrait } = data
@@ -11,26 +10,11 @@ const IndexPage = ({ data }) => {
   console.log(projects)
   return (
     <Layout>
-      <SEO title="Portfolio – Resume" />
-      <h1>Landing</h1>
-      {projects.map(project => {
-        console.log("PROJECT: ", project.image)
-        return (
-          <div>
-            <h2 key={project.id}>{project.title}</h2>
-            <Img fluid={project.image.childImageSharp.fluid} alt={project.title} />
-          </div>
-        )
-      })}
-      <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-        <Img fluid={ahlogo.childImageSharp.fluid} />
-        <Img fluid={portrait.childImageSharp.fluid} />
-      </div>
-      <Link to="/page-2/">Go to page 2</Link>
+      <SEO title="Resume" />
+      <LandingPage projects={projects} logo={ahlogo} portrait={portrait} />
     </Layout >
   )
 }
-
 export default IndexPage
 
 export const imageQuery = graphql`
@@ -60,6 +44,7 @@ export const imageQuery = graphql`
           title
           subtitle
           slug
+          color
           image {
             childImageSharp {
               fluid {
