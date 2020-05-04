@@ -1,20 +1,39 @@
 import React from "react"
 import { Link } from "gatsby"
 import Img from "gatsby-image"
-import "./LandingPage.css"
+import { useSpring, animated, config } from 'react-spring'
 import ProjectOverview from "../ProjectOverview/ProjectOverview"
+import briefcaseIcon from "../../images/briefcase-icon.png"
+import "./LandingPage.css"
 
 const LandingPage = ({ projects, logo, portrait }) => {
-  console.log(projects)
+  const greetingStyle = useSpring({
+    transform: "scale(0)",
+    from: { transform: "scale(1)" },
+    delay: 1000,
+    duration: 500
+  })
+  const portraitStyle = useSpring({
+    opacity: "1",
+    from: { opacity: "0" },
+    delay: 1200,
+    config: { mass: 1, tension: 100, friction: 60 }
+  })
   return (
     <div className="landingPage-container">
       <header className="lpHeader">
         <div className="lpHeader-contact-container">
           <div className="lpHeader-image-container">
             <div className="lpHeader-greeting-container">
-              <span className="lpHeader-greeting-hand">👋</span>
+              <animated.div style={greetingStyle}>
+                <div className="lpHeader-greeting-image-container">
+                  <img src={briefcaseIcon} alt="briefcase" className="lpHeader-greeting-image" />
+                </div>
+              </animated.div>
             </div>
-            <Img fluid={portrait.childImageSharp.fluid} alt="Adam Heldring portrait" className="lpHeader-image-container-image" alt="Adam Heldring" />
+            <animated.div style={portraitStyle}>
+              <Img fluid={portrait.childImageSharp.fluid} alt="Adam Heldring portrait" className="lpHeader-image-container-image" alt="Adam Heldring" />
+            </animated.div>
           </div>
           <p>hello@adamheldring.com<br /> +46 708-841828</p>
         </div>
@@ -198,7 +217,7 @@ const LandingPage = ({ projects, logo, portrait }) => {
           <a href="https://www.linkedin.com/in/adam-heldring-947062173/" target="_blank" rel="noopener noreferrer" tabIndex="-1"><button>SEE MY LINKEDIN</button></a>
         </div>
       </section>
-    </div>
+    </div >
   )
 }
 

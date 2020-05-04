@@ -7,7 +7,6 @@ import LandingPage from "../components/LandingPage/LandingPage"
 const IndexPage = ({ data }) => {
   const { ahlogo, portrait } = data
   const projects = data.allProjectsJson.edges.map(edge => edge.node)
-  console.log(projects)
   return (
     <Layout>
       <SEO title="Resume" />
