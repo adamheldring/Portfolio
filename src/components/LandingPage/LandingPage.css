@@ -23,15 +23,27 @@
   font-size: 24px;
   margin: 20px 0;
 }
-
 .lpHeader-image-container {
   overflow: hidden;
   padding-bottom: 4px;
+  position: relative;
+}
+.lpHeader-greeting-container {
+  font-size: 150px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 93%;
+  height: 100%;
+  opacity: 0.5;
+  z-index: 10;
 }
 .lpHeader-image-container-image {
   width: 92%;
   margin-top: 10px;
   object-fit: cover;
+  opacity: 0.1;
 }
 .lpHeader-info-container {
   width: 50%;
@@ -99,7 +111,8 @@
   .lpHeader-contact-container {
     width: 100%;
   }
-  .lpHeader-image-container-image {
+  .lpHeader-image-container-image,
+  .lpHeader-greeting-container {
     max-width: 570px;
     max-height: 640px;
   }
@@ -137,7 +150,8 @@
   .lpHeader-image-container-image {
     width: 100%;
   }
-  .lpHeader-info-container {
+  .lpHeader-info-container,
+  .lpHeader-greeting-container {
     width: 100%;
   }
   .lpHeader-info-container h2 {

@@ -11,6 +11,9 @@ const LandingPage = ({ projects, logo, portrait }) => {
       <header className="lpHeader">
         <div className="lpHeader-contact-container">
           <div className="lpHeader-image-container">
+            <div className="lpHeader-greeting-container">
+              <span className="lpHeader-greeting-hand">👋</span>
+            </div>
             <Img fluid={portrait.childImageSharp.fluid} alt="Adam Heldring portrait" className="lpHeader-image-container-image" alt="Adam Heldring" />
           </div>
           <p>hello@adamheldring.com<br /> +46 708-841828</p>
