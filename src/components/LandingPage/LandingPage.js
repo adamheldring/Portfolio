@@ -18,8 +18,8 @@ const LandingPage = ({ projects, logo, portrait }) => {
         <div className="lpHeader-info-container" style={{ position: "relative" }}>
           <h1 className="sr-only">Adam Heldring</h1>
           <Img fluid={logo.childImageSharp.fluid} alt="Adam Heldring logo" className="lpheader__namelogo" alt="Adam Heldring" />
-          <h1 className="lpheader__title">FRONT-END WEB DEVELOPER</h1>
-          <h2>With 10+ years as music industry and communications consultant.</h2>
+          <h2 className="lpheader__title">FRONT-END WEB DEVELOPER</h2>
+          <h3 className="lpheader__subtitle">With 10+ years as music industry and communications consultant.</h3>
           <p>
             <br />
               I’m a front-end developer and a world class learner. I’m also a
@@ -43,26 +43,14 @@ const LandingPage = ({ projects, logo, portrait }) => {
         </div>
       </header>
       <section className="section-container lpTech-section">
-        <h1>PROFESSIONAL WORK</h1>
+        <h2 className="section-title">PROFESSIONAL WORK</h2>
         <div className="lpTechList-container">
           <div style={{ margin: "18px 0", fontSize: "16px" }}>
             💼 Currently agency work, previously freelance. Full time web developer since 2018. Agile sprint-based cross functional team projects building medium to large scale performance sensitive web apps with authentication and security awareness. Often working on simultaneous projects spanning from over a year down to two week prototypes. <br /><br />
             💻 Later projects include a large scale video streaming service, a human resources administration tool and a financial invoicing system. I can’t show proprietary code but I’m happy to discuss my role and contribution if you ask me directly.
           </div>
-          {/* <div style={{ margin: "18px 0" }}>
-            💼 Currently agency work, previously freelance. Full time web developer since 2018. <br /><br />
-            🤝 Agile sprint-based cross functional team projects building medium to large scale performance sensitive web apps with authentication and security awareness. Often working on simultaneous projects spanning from over a year down to two week prototypes. <br /><br />
-            💻 Later projects include a large scale video streaming service, a human resources administration tool and a financial invoicing system.<br /><br />
-            🤐 I can’t show proprietary code but I’m happy to discuss my role and contribution if you ask me directly.
-          </div> */}
-          {/* <p>
-            JavaScript, React, Node.js, ES6, HTML5, CSS, SASS, JSX, Next.js, Gatsby, Express, Flexbox,
-            CSS Grid, MongoDB, Rest API:s, GraphQL, Bootstrap, TailwindCSS, Redux, MobX, Web Audio API, HTML Canvas, Tone.js,  • Logic Pro X, Pro Tools HD, FMOD Studio + Analog audio engineering • Currently agency work, previously freelance work + shorter projects together with
-            companies like Expressen, Bonnier News, Volumental and Svenska Spel
-            @ Technigo.
-          </p> */}
         </div>
-        <h1>PERSONAL PROJECTS</h1>
+        <h2 className="section-title">PERSONAL PROJECTS</h2>
         <div className="lpProjectOverview-container">
           {projects
             .map(project => (
@@ -78,15 +66,15 @@ const LandingPage = ({ projects, logo, portrait }) => {
         </div>
       </section>
       <section className="section-container lpSkills-section">
-        <h1>SKILLS</h1>
+        <h2 className="section-title">SKILLS</h2>
         <div className="section-content-division">
-          <h3>CODE</h3>
+          <h3 className="division-title">CODE</h3>
           <ul>
             <li>JavaScript ES6</li>
-            <li>HTML5</li>
-            <li>CSS3</li>
             <li>React</li>
             <li>TypeScript</li>
+            <li>HTML5</li>
+            <li>CSS3</li>
             <li>Next.js</li>
             <li>Gatsby</li>
             <li>Bootstrap</li>
@@ -106,7 +94,7 @@ const LandingPage = ({ projects, logo, portrait }) => {
           </ul>
         </div>
         <div className="section-content-division">
-          <h3>TOOLBOX</h3>
+          <h3 className="division-title">TOOLBOX</h3>
           <ul>
             <li>VSCode</li>
             <li>iTerm2</li>
@@ -127,7 +115,7 @@ const LandingPage = ({ projects, logo, portrait }) => {
         </div>
         <div className="section-content-division section-content-division--stacked-wrapper">
           <div className="section-content-division--stacked">
-            <h3>MORE</h3>
+            <h3 className="division-title">MORE</h3>
             <ul>
               <li>Copywriting</li>
               <li>Text editing</li>
@@ -138,7 +126,7 @@ const LandingPage = ({ projects, logo, portrait }) => {
             </ul>
           </div>
           <div className="section-content-division--stacked">
-            <h3>UPCOMING</h3>
+            <h3 className="division-title">UPCOMING</h3>
             <ul>
               <li>Digging deeper into testing</li>
             </ul>
@@ -146,9 +134,9 @@ const LandingPage = ({ projects, logo, portrait }) => {
         </div>
       </section>
       <section className="section-container lpStudies-section">
-        <h1>STUDIES</h1>
+        <h2 className="section-title">STUDIES</h2>
         <div className="section-content-division studies-division">
-          <h3>FRONT-END DEVELOPER</h3>
+          <h3 className="division-title">FRONT-END DEVELOPER</h3>
           <p>
             Full-time 3 month boot camp and intensive program. Covering programming fundamentals to how to structure and
             build bigger web projects. JavaScript focus with 50+ individual tasks (in HTML5, CSS, JavaScript,
@@ -158,7 +146,7 @@ const LandingPage = ({ projects, logo, portrait }) => {
             </p>
         </div>
         <div className="section-content-division studies-division">
-          <h3>TECHNICAL YEAR @ KTH</h3>
+          <h3 className="division-title">TECHNICAL YEAR @ KTH</h3>
           <p>1 year at the Royal Institute of Technology (KTH).
           Mixed technical courses including Java programming, math and
           physics.
@@ -166,7 +154,7 @@ const LandingPage = ({ projects, logo, portrait }) => {
             </p>
         </div>
         <div className="section-content-division studies-division">
-          <h3>IT-PROGRAM</h3>
+          <h3 className="division-title">IT-PROGRAM</h3>
           <p>
             3 year specially designed IT-program at Rekarne High School,
             Eskilstuna. Science program with distinct IT focus covering
@@ -176,7 +164,7 @@ const LandingPage = ({ projects, logo, portrait }) => {
             </p>
         </div>
         <div className="section-content-division studies-division">
-          <h3>BACHELOR IN<br />BUSINESS ECONOMICS</h3>
+          <h3 className="division-title">BACHELOR IN<br />BUSINESS ECONOMICS</h3>
           <p>
             3 years at Kalmar University covering the fundamentals of economics,
             project management, leadership, marketing and copyright law. Music
@@ -185,7 +173,7 @@ const LandingPage = ({ projects, logo, portrait }) => {
             </p>
         </div>
         <div className="section-content-division studies-division">
-          <h3>INTERNATIONAL INTERNSHIP</h3>
+          <h3 className="division-title">INTERNATIONAL INTERNSHIP</h3>
           <p>1 year living in New York City with a paid internship at
           the music booking agency The Agency Group.
               <br />New York 2006
@@ -193,7 +181,7 @@ const LandingPage = ({ projects, logo, portrait }) => {
         </div>
       </section>
       <section className="section-container experience-section">
-        <h1>EXPERIENCE</h1>
+        <h2 className="section-title">EXPERIENCE</h2>
         <div className="lpExperience-container">
           <p>Web Developer @ Will & Skill • Head of Press @ Stockholm Culture Festival • Head of Press @ Kulturnatt Stockholm •
           Press Contact @ Musikhjälpen • Sound Designer @ Sergeant Tom • Sound Designer @ Make Your Mark •

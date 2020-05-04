@@ -15,8 +15,15 @@
   top: 15px;
 }
 .lpheader__title {
+  font-size: 32px;
   margin-top: 5px;
+  margin-bottom: 20px;
 }
+.lpheader__subtitle {
+  font-size: 24px;
+  margin: 20px 0;
+}
+
 .lpHeader-image-container {
   overflow: hidden;
   padding-bottom: 4px;

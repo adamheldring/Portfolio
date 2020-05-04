@@ -16,28 +16,27 @@ const ProjectPage = ({ project }) => {
       </Link>
       <Img fluid={project.image.childImageSharp.fluid} alt={project.subtitle} />
       <h1>{project.title.toUpperCase()}</h1>
-      <h2>{project.subtitle.toUpperCase()}</h2>
+      <h2 className="ppSubtitle">{project.subtitle.toUpperCase()}</h2>
       <p dangerouslySetInnerHTML={{ __html: project.description }} />
       <a href={project.link} target="_blank" rel="noopener noreferrer" tabIndex="-1"><button>SEE IT LIVE</button></a>
       <div className="ppTech-container">
-        <h1>TECH SPECHS</h1>
-
+        <h2 className="ppTech-title">TECH SPEC</h2>
         <div className="ppTechSection-container">
-          <h3>CODE</h3>
+          <h3 className="division-title">CODE</h3>
           <ul>
             {project.tech.code.map((item, index) => <li key={`Tech-${index}`}>{item}</li>)}
           </ul>
         </div>
 
         <div className="ppTechSection-container">
-          <h3>TOOLBOX</h3>
+          <h3 className="division-title">TOOLBOX</h3>
           <ul>
             {project.tech.toolbox.map((item, index) => <li key={`Tool-${index}`}>{item}</li>)}
           </ul>
         </div>
 
         <div className="ppTechSection-container">
-          <h3>MORE</h3>
+          <h3 className="division-title">MORE</h3>
           <ul>
             {project.tech.more.map((item, index) => <li key={`More-${index}`}>{item}</li>)}
           </ul>

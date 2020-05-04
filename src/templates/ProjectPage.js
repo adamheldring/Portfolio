@@ -19,6 +19,7 @@ export const query = graphql`
       link
       repo
       description
+      color
       tech {
         code
         toolbox

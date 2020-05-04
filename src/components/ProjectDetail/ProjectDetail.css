@@ -3,11 +3,7 @@
   margin-top: 20px;
 }
 
-.projectPage-container h1 {
-  width: 100%;
-  margin-bottom: 0;
-}
-.projectPage-container h2 {
+.ppSubtitle {
   max-width: 700px;
 }
 .projectPage-container p {
@@ -35,6 +31,13 @@
   justify-content: center;
   margin-top: 20px;
 }
+.ppTech-title {
+  display: block;
+  font-size: 32px;
+  margin-top: 20px;
+  width: 100%;
+  margin-bottom: 0;
+}
 .ppTechSection-container {
   width: 35%;
   padding-right: 5%;
@@ -53,9 +56,6 @@
   }
 }
 @media (min-width: 601px) and (max-width: 1099px) {
-  .projectPage-container h1 {
-    margin-bottom: 10px;
-  }
   .projectPage-container p {
     width: 100%;
     max-width: 700px;
@@ -81,9 +81,7 @@
   }
 }
 @media screen and (max-width: 600px) {
-  .projectPage-container h1 {
-    margin-bottom: 10px;
-  }
+
   .projectPage-container p {
     max-width: 100%;
   }
