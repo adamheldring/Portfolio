@@ -19,6 +19,7 @@
 }
 .lpHeader-image-container {
   overflow: hidden;
+  padding-bottom: 4px;
 }
 .lpHeader-image-container-image {
   width: 92%;
@@ -110,6 +111,7 @@
   .lpheader__title {
     font-size: 37px;
     max-width: 100%;
+    margin-top: 10px;
   }
   .lpheader__namelogo {
     max-width: 575px;
