@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import Img from "gatsby-image"
 import { useSpring, animated, config } from 'react-spring'
 import ProjectOverview from "../ProjectOverview/ProjectOverview"
-import briefcaseIcon from "../../images/briefcase-icon.png"
+import briefcaseIcon from "../../images/briefcase.png"
 import "./LandingPage.css"
 
 const LandingPage = ({ projects, logo, portrait }) => {
