@@ -43,14 +43,26 @@ const LandingPage = ({ projects, logo, portrait }) => {
         </div>
       </header>
       <section className="section-container lpTech-section">
-        <h1>TECH</h1>
+        <h1>PROFESSIONAL WORK</h1>
         <div className="lpTechList-container">
-          <p>JavaScript, React, Node.js, ES6, HTML5, CSS, SASS, JSX, Next.js, Gatsby, Express, Flexbox,
-          CSS Grid, MongoDB, Rest API:s, GraphQL, Bootstrap, TailwindCSS, Redux, MobX, Web Audio API, HTML Canvas, Tone.js,  • Logic Pro X, Pro Tools HD, FMOD Studio + Analog audio engineering • Currently agency work, previously freelance work + shorter projects together with
-          companies like Expressen, Bonnier News, Volumental and Svenska Spel
-          @ Technigo.
-            </p>
+          <div style={{ margin: "18px 0", fontSize: "16px" }}>
+            💼 Currently agency work, previously freelance. Full time web developer since 2018. Agile sprint-based cross functional team projects building medium to large scale performance sensitive web apps with authentication and security awareness. Often working on simultaneous projects spanning from over a year down to two week prototypes. <br /><br />
+            💻 Later projects include a large scale video streaming service, a human resources administration tool and a financial invoicing system. I can’t show proprietary code but I’m happy to discuss my role and contribution if you ask me directly.
+          </div>
+          {/* <div style={{ margin: "18px 0" }}>
+            💼 Currently agency work, previously freelance. Full time web developer since 2018. <br /><br />
+            🤝 Agile sprint-based cross functional team projects building medium to large scale performance sensitive web apps with authentication and security awareness. Often working on simultaneous projects spanning from over a year down to two week prototypes. <br /><br />
+            💻 Later projects include a large scale video streaming service, a human resources administration tool and a financial invoicing system.<br /><br />
+            🤐 I can’t show proprietary code but I’m happy to discuss my role and contribution if you ask me directly.
+          </div> */}
+          {/* <p>
+            JavaScript, React, Node.js, ES6, HTML5, CSS, SASS, JSX, Next.js, Gatsby, Express, Flexbox,
+            CSS Grid, MongoDB, Rest API:s, GraphQL, Bootstrap, TailwindCSS, Redux, MobX, Web Audio API, HTML Canvas, Tone.js,  • Logic Pro X, Pro Tools HD, FMOD Studio + Analog audio engineering • Currently agency work, previously freelance work + shorter projects together with
+            companies like Expressen, Bonnier News, Volumental and Svenska Spel
+            @ Technigo.
+          </p> */}
         </div>
+        <h1>PERSONAL PROJECTS</h1>
         <div className="lpProjectOverview-container">
           {projects
             .map(project => (
@@ -74,6 +86,7 @@ const LandingPage = ({ projects, logo, portrait }) => {
             <li>HTML5</li>
             <li>CSS3</li>
             <li>React</li>
+            <li>TypeScript</li>
             <li>Next.js</li>
             <li>Gatsby</li>
             <li>Bootstrap</li>
