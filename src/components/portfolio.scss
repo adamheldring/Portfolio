@@ -13,6 +13,9 @@ body {
 }
 .inspector-only {
   display: none;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
 }
 .sr-only {
   position: fixed;
