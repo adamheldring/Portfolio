@@ -10,13 +10,13 @@ const LandingPage = ({ projects, logo, portrait }) => {
   const greetingStyle = useSpring({
     transform: "scale(0)",
     from: { transform: "scale(1)" },
-    delay: 1000,
+    delay: 800,
     duration: 500
   })
   const portraitStyle = useSpring({
     opacity: "1",
     from: { opacity: "0" },
-    delay: 1200,
+    delay: 1000,
     config: { mass: 1, tension: 100, friction: 60 }
   })
   return (
@@ -60,7 +60,7 @@ const LandingPage = ({ projects, logo, portrait }) => {
               most – making things.
             </p>
           <div className="github-button-container">
-            <a href="https://github.com/adamheldring" target="_blank" rel="noopener noreferrer" tabIndex="-1"><button>SEE MY GITHUB</button></a>
+            <a href="https://github.com/adamheldring" target="_blank" rel="noopener noreferrer" tabIndex="-1" className="button-link"><button>SEE MY GITHUB</button></a>
           </div>
         </div>
       </header>
@@ -214,7 +214,7 @@ const LandingPage = ({ projects, logo, portrait }) => {
             </p>
         </div>
         <div className="lpLinkedin-button-container studies-division">
-          <a href="https://www.linkedin.com/in/adam-heldring-947062173/" target="_blank" rel="noopener noreferrer" tabIndex="-1"><button>SEE MY LINKEDIN</button></a>
+          <a href="https://www.linkedin.com/in/adam-heldring-947062173/" target="_blank" rel="noopener noreferrer" tabIndex="-1" className="button-link"><button>SEE MY LINKEDIN</button></a>
         </div>
       </section>
     </div >

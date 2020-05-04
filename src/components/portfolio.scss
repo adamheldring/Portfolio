@@ -8,6 +8,12 @@ body {
   padding: 0;
   font-family: 'Open Sans', sans-serif;
 }
+.button-link {
+  outline: none;
+}
+.inspector-only {
+  display: none;
+}
 .sr-only {
   position: fixed;
   left: 10000px;
@@ -24,7 +30,7 @@ body {
 a {
   text-decoration: none;
   color: #000;
-}
+}   
 button {
   border: none;
   padding: 10px 30px;

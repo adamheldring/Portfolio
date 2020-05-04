@@ -18,7 +18,7 @@ const ProjectPage = ({ project }) => {
       <h1>{project.title.toUpperCase()}</h1>
       <h2 className="ppSubtitle">{project.subtitle.toUpperCase()}</h2>
       <p dangerouslySetInnerHTML={{ __html: project.description }} />
-      <a href={project.link} target="_blank" rel="noopener noreferrer" tabIndex="-1"><button>SEE IT LIVE</button></a>
+      <a href={project.link} target="_blank" rel="noopener noreferrer" tabIndex="-1" className="button-link"><button>SEE IT LIVE</button></a>
       <div className="ppTech-container">
         <h2 className="ppTech-title">TECH SPEC</h2>
         <div className="ppTechSection-container">
@@ -43,7 +43,7 @@ const ProjectPage = ({ project }) => {
         </div>
       </div>
       <div className="ppCodeButton-container">
-        <a href={project.repo} target="_blank" rel="noopener noreferrer" tabIndex="-1"><button>VIEW THE CODE</button></a>
+        <a href={project.repo} target="_blank" rel="noopener noreferrer" tabIndex="-1" className="button-link"><button>VIEW THE CODE</button></a>
       </div>
     </div>
   )
