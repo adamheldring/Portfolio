@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import Img from "gatsby-image"
-import { useSpring, animated, config } from 'react-spring'
+import { useSpring, animated } from 'react-spring'
 import ProjectOverview from "../ProjectOverview/ProjectOverview"
 import briefcaseIcon from "../../images/briefcase.png"
 import "./LandingPage.css"
@@ -32,14 +32,14 @@ const LandingPage = ({ projects, logo, portrait }) => {
               </animated.div>
             </div>
             <animated.div style={portraitStyle}>
-              <Img fluid={portrait.childImageSharp.fluid} alt="Adam Heldring portrait" className="lpHeader-image-container-image" alt="Adam Heldring" />
+              <Img fluid={portrait.childImageSharp.fluid} alt="Adam Heldring portrait" className="lpHeader-image-container-image" />
             </animated.div>
           </div>
           <p>hello@adamheldring.com<br /> +46 708-841828</p>
         </div>
         <div className="lpHeader-info-container" style={{ position: "relative" }}>
           <h1 className="sr-only">Adam Heldring</h1>
-          <Img fluid={logo.childImageSharp.fluid} alt="Adam Heldring logo" className="lpheader__namelogo" alt="Adam Heldring" />
+          <Img fluid={logo.childImageSharp.fluid} alt="Adam Heldring logo" className="lpheader__namelogo" />
           <h2 className="lpheader__title">FRONT-END WEB DEVELOPER</h2>
           <h3 className="lpheader__subtitle">With 10+ years as music industry and communications consultant.</h3>
           <p>
@@ -68,8 +68,8 @@ const LandingPage = ({ projects, logo, portrait }) => {
         <h2 className="section-title">PROFESSIONAL WORK</h2>
         <div className="lpTechList-container">
           <div style={{ margin: "18px 0", fontSize: "16px" }}>
-            💼 Currently agency work, previously freelance. Full time web developer since 2018. Agile sprint-based cross functional team projects building medium to large scale performance sensitive web apps with authentication and security awareness. Often working on simultaneous projects spanning from over a year down to two week prototypes. <br /><br />
-            💻 Later projects include a large scale video streaming service, a human resources administration tool and a financial invoicing system. I can’t show proprietary code but I’m happy to discuss my role and contribution if you ask me directly.
+            <span role="img" aria-label="briefcase">💼</span> Currently agency work, previously freelance. Full time web developer since 2018. Agile sprint-based cross functional team projects building medium to large scale performance sensitive web apps with authentication and security awareness. Often working on simultaneous projects spanning from over a year down to two week prototypes. <br /><br />
+            <span role="img" aria-label="computer">💻</span> Later projects include a large scale video streaming service, a human resources administration tool and a financial invoicing system. I can’t show proprietary code but I’m happy to discuss my role and contribution if you ask me directly.
           </div>
         </div>
         <h2 className="section-title">PERSONAL PROJECTS</h2>

@@ -5,24 +5,17 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React, { Fragment } from "react"
+import React, { useEffect, Fragment } from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
 import Footer from "../components/Footer/footer"
+import logAsciiArt from "../helpers/logAsciiArt"
 
 import "./portfolio.scss"
 
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
-
+  useEffect(() => {
+    logAsciiArt()
+  }, [])
   return (
     <Fragment>
       <div className="outerFullPageWrapper">
