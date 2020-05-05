@@ -16,8 +16,7 @@ const Layout = ({ children }) => {
     <div className="outerFullPageWrapper">
       <main>
         <pre className="GREETINGS_FRIEND! inspector-only">
-          Hey, thanks for having a look at this code. Shoot me an e-mail and we'll talk!
-          {`Cheers, `}
+          Hey, thanks for having a look at this code. Shoot me an e-mail and we'll talk! Cheers,
           {`${'       '}
     ___    ____  ___    __  ___   __  __________    ____  ____  _____   ________
    /   |  / __ \\/   |  /  |/  /  / / / / ____/ /   / __ \\/ __ \\/  _/ | / / ____/
