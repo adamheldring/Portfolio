@@ -68,8 +68,8 @@ const LandingPage = ({ projects, logo, portrait }) => {
         <h2 className="section-title">PROFESSIONAL WORK</h2>
         <div className="lpTechList-container">
           <div style={{ margin: "18px 0", fontSize: "16px" }}>
-            <span role="img" aria-label="briefcase">💼</span> Currently agency work, previously freelance. Full time web developer since 2018. Agile sprint-based cross functional team projects building medium to large scale performance sensitive web apps with authentication and security awareness. Often working on simultaneous projects spanning from over a year down to two week prototypes. <br /><br />
-            <span role="img" aria-label="computer">💻</span> Later projects include a large scale video streaming service, a human resources administration tool and a financial invoicing system. I can’t show proprietary code but I’m happy to discuss my role and contribution if you ask me directly.
+            <span role="img" aria-label="briefcase">💼</span> Currently agency work at Will & Skill, previously freelance. Full time web developer since 2018. Agile sprint-based cross functional team projects building medium to large scale performance sensitive web apps with authentication and security awareness. Often working on simultaneous projects spanning from over a year down to two week prototypes. <br /><br />
+            <span role="img" aria-label="computer">💻</span> Recent projects include a large scale video streaming service, a human resources administration tool and a financial invoicing system. I can’t show proprietary code but I’m happy to discuss my role and contribution if you ask me directly.
           </div>
         </div>
         <h2 className="section-title">PERSONAL PROJECTS</h2>
