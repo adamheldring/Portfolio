@@ -164,7 +164,7 @@ const LandingPage = ({ projects, logo, portrait }) => {
             build bigger web projects. JavaScript focus with 50+ individual tasks (in HTML5, CSS, JavaScript,
             JSX, React, Node.js) and 6 team projects with public demos together with
             companies like Volumental, Expressen, Comprend and Svenska Spel.
-              <br />Stockholm Sep-Nov 2018
+              <br />Stockholm 2018
             </p>
         </div>
         <div className="section-content-division studies-division">
