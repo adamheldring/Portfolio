@@ -51,8 +51,8 @@
         "SvelteKit",
         "Tone.js",
         "Web Audio API",
-        "HTML5",
-        "CSS3"
+        "TailwindCSS",
+        "HTML5"
       ],
       "toolbox": ["VSCode", "Logic Pro X", "iTerm2", "GitHub", "Trello"],
       "more": [
