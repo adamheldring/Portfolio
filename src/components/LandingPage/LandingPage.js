@@ -111,11 +111,11 @@ const LandingPage = ({ projects, logo, portrait }) => {
             </span>{" "}
             Recent projects include an AI based speech-to-text service for
             live-subtitles, a high performance collaborative text editor and
-            very performance sensitive internal tools for the television
-            broadcast chain. Previous agency work include a large scale video
-            streaming service, a human resources administration tool and a
-            financial invoicing system. I can’t show proprietary code but I’m
-            happy to discuss my role and contribution if you ask me directly.
+            various internal tools for the television broadcast chain. Previous
+            agency work include a large scale video streaming service, a human
+            resources administration tool and a financial invoicing system. I
+            can’t show proprietary code but I’m happy to discuss my role and
+            contribution if you ask me directly.
           </div>
         </div>
         <h2 className="section-title">PERSONAL PROJECTS</h2>
