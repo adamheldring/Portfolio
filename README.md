@@ -3,10 +3,12 @@
 ## LIVE AT: [portfolio.adamheldring.com](https://portfolio.adamheldring.com/)
 ## :computer: :point_up: :ok_hand:
 
-🎹 [Watch Your Tone](http://localhost:3011/#/project/1)
+🎹 [Watch Your Tone](https://portfolio.adamheldring.com/projects/watch-your-tone)
 
-🎸 [AdamHeldring.com](http://localhost:3011/#/project/2)
+🎧 [Mixer](https://portfolio.adamheldring.com/projects/mixer)
 
-🎲 [Board Game Grid](http://localhost:3011/#/project/3)
+🎸 [AdamHeldring.com](https://portfolio.adamheldring.com/projects/ah2019)
 
-💚 [Who's Turn?](http://localhost:3011/#/project/4)
+🎲 [Board Game Grid](https://portfolio.adamheldring.com/projects/board-game-grid)
+
+💚 [Who's Turn?](https://portfolio.adamheldring.com/projects/whos-turn)
